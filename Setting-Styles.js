@@ -1,50 +1,23 @@
-import React from 'react'
-import { View, StyleSheet, Alert, Text, Image,TextInput,TouchableHighlight, TouchableOpacity } from 'react-native'
-import { color } from 'react-native-reanimated'
-import globalStyles from '../global-styles'
+import {StyleSheet} from 'react-native'
 
-export default function SetSensor({ route, navigation }){
-    let [inputNumber, setInputNumber] = React.useState('')
-
-    return (
-        <View >
-            <View style={globalStyles.container}>
-            <TouchableHighlight  style={[styles.items3,]}>
-				<View >
-                    <View>
-                        <Image source={require('../src/soil-analysis.png')} style={styles.img} />
-                    </View>
-            	
-					<Text style={styles.buttonText3}>โหมดเซ็นเซอร์</Text>
-				</View>
-                
-			</TouchableHighlight>
-            </View>
-           
-            
-            <TouchableHighlight  style={[styles.items,]}>
-
-				<View >
-					
-				</View>
-			</TouchableHighlight>
-            <View>
-                <TextInput></TextInput>
-            </View>
-            
-        </View>
-    )
-}
-
-const styles = StyleSheet.create({
+const SettingStyles = StyleSheet.create({
     container: {
 		flex: 1,
 		flexDirection: 'column',
 		alignItems: 'center',
 		marginTop: 50
 	},
+	container1: {
+		flex: 1,
+	  },
+	  container2: {
+		flex: 1,
+		paddingLeft:30,
+		justifyContent: "center",
+		alignItems: "center",
+	  },
 	items: {
-		
+		flexDirection:'row',
 		height: 90,
         marginTop:20,
         marginLeft:20,
@@ -52,8 +25,21 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		marginBottom: 15,
-		borderRadius: 15,
+		borderRadius: 50,
 		backgroundColor: '#AED6F1'
+	},
+	itemss: {
+		flexDirection:'row',
+		height: 40,
+		width:60,
+        marginTop:10,
+        
+        marginRight:20,
+		justifyContent: 'center',
+		alignItems: 'center',
+		marginBottom: 15,
+		borderRadius: 50,
+		backgroundColor: '#000066'
 	},
     items1:{
         marginBottom: 15
@@ -61,6 +47,10 @@ const styles = StyleSheet.create({
 	buttonText: {
 		fontSize: 20,
 		color: '#00BE00'
+	},
+	buttonTextt: {
+		fontSize: 20,
+		color: '#fff'
 	},
     buttonText1: {
 		fontSize: 60,
@@ -73,7 +63,7 @@ const styles = StyleSheet.create({
 	viewImgTextContainer: {
 		flexDirection: 'row',
 		justifyContent: 'space-evenly',
-		alignItems: 'center'
+		
 	},
     button: {
 		width: 200,
@@ -86,14 +76,14 @@ const styles = StyleSheet.create({
 
 
 	items3: {
-        marginTop:40,
+        marginTop:20,
         marginLeft:20,
 		width: 150,
 		height: 150,
 		justifyContent: 'center',
 		alignItems: 'center',
 		marginBottom: 15,
-		borderRadius: 15,
+		borderRadius: 20,
 		backgroundColor: '#C0C0C0'
 	},
 	buttonOpacity: {
@@ -123,6 +113,15 @@ const styles = StyleSheet.create({
 		width: 80,
         alignItems: 'center',
 		marginRight: 5
-	}
+	},
+	input: {
+		height: 40,
+		margin: 12,
+		borderWidth: 1,
+		padding: 10,
+		borderRadius: 15,
+	  },
 
 })
+
+export default SettingStyles

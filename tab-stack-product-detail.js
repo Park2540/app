@@ -14,7 +14,7 @@ export default function TabStackProductDetail({ route, navigation }){
             <TouchableHighlight style={[styles.items,]}
 				underlayColor='#00BE00'
 				onPress={
-                    () => navigation.navigate('SetCon2')}
+                    () => navigation.navigate('SetCon1')}
 			>
 				
 				<View style={styles.viewImgTextContainer}>
