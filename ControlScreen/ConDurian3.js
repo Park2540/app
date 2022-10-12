@@ -1,3 +1,5 @@
+//เผื่อไว้ก่อน
+
 import React from 'react'
 import { StyleSheet, View, Text, Button } from 'react-native'
 import globalStyles from '../global-styles'
