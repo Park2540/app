@@ -17,6 +17,8 @@ export default function ConDurian1({ route, navigation }){
                     () => navigation.navigate('SetCon2')}
 			>
 				
+
+
 				<View style={styles.viewImgTextContainer}>
 					<Text style={styles.buttonText}>โหมดตั้งเวลา</Text>
 				</View>
